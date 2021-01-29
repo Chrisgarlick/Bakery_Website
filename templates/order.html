@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="orderimg">
+        <img src="{% static 'Images/cake.jpg' %}" height=150px alt="">
+        <img src="{% static 'Images/cake2.jpg' %}" height=150px alt="">
+        <img src="{% static 'Images/cake3.jpg' %}" height=150px alt="">
+        <img src="{% static 'Images/muffin.jpg' %}" height=150px alt="">
+    </div>
+    <div class="place">
+        <h1>Want to place an order?</h1>
+        <h2>Find our closest store to you!</h2>
+    </div>
+    <div class="orderform">
+        <form action="" method="POST">
+            <label class="orders" for="postcode">Enter your Postcode</label>
+            <br/>
+            <input class="orders" type="text" name="postcode">
+            <br/>
+            <button class="orders" type="submit">Search</button>
+        </form>
+    </div>
+{% endblock %}

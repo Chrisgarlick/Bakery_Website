@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="title">
+        <h1>About Us</h1>
+    </div>
+    <div class="aboutimg">
+        <img src="{% static 'Images/wedding_cake.jpg' %}" height=400px; alt="">
+    </div>
+    <div class="words">
+        <p>After 10 years of making bespoke Cakes for Companies, we thought it was about 
+            time to give a taste of our cakes to as many people as possible</p>
+        <p>Not only do we want to give you the best tasting cake, we want to ensure that 
+            you're first Cakeries experience is one that will leave you wanting more!</p>
+        <p>Whether you're wanting a Birthday cake, Wedding Cake, Cupcakes or just an 
+            everyday cake for all your needs, make sure you get in touch!
+        </p>
+        <button type="button"><a href="{% url 'contact' %}">Get in Touch!</a></button>
+    </div>
+        
+{% endblock %}
